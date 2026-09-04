@@ -1,0 +1,64 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "category": "Frontend",
+            "name": "React",
+            "level": "Intermediate",
+            "yearsOfExperience": 3
+        },
+        {
+            "id": "2",
+            "category": "Frontend",
+            "name": "Angular",
+            "level": "Beginner",
+            "yearsOfExperience": 1
+        },
+        {
+            "id": "3",
+            "category": "Backend",
+            "name": "Node.js",
+            "level": "Intermediate",
+            "yearsOfExperience": 2
+        },
+        {
+            "id": "4",
+            "category": "Database",
+            "name": "PostgresSQL",
+            "level": "Intermediate",
+            "yearsOfExperience": 1
+        },
+        {
+            "id": "5",
+            "category": "Backend",
+            "name": "Java",
+            "level": "Intermediate",
+            "yearsOfExperience": 6
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "Shortest Flight Path",
+            "description": "Developed in an Agile team of four using Java and Spring Boot for CS314. This web application allows users to search, select/remove, and optimize airport paths using the traveling salesperson algorithm to optimize the flight path.",
+            "role": "Software Engineer"
+        },
+        {
+            "id": "2",
+            "title": "Employee Management",
+            "description": "Developed in an Agile team of six using Java and React for CS414. This web application allows users to search, add, modify, and remove airport employees. This application's main focus was on software testing and used tools such as PMD/CPD, Randoop, SpotBugs, ISP/BCC tables, and EvoSuite",
+            "role": "Software Engineer"
+        },
+        {
+            "id": "3",
+            "title": "Angular Real Estate",
+            "description": "Built as an individual project using React and the Angular framework in order to build base skills. This web application allows users to view housing listing details from a JSON file and allows for querying based on location and/or house price.",
+            "role": "Software Engineer"
+        },
+        {
+            "id": "4",
+            "title": "MiniJava to MIPS Compiler",
+            "description": "Individually developed for CS453 to understand the inner-workings of compilers. This project consisted of four parts; lexing, parsing, semantic analysis, and code generation. When put together, these parts create a full MiniJava to MIPS compiler."
+        }
+    ]
+}
