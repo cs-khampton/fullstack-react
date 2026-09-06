@@ -9,7 +9,7 @@ function Skills() {
     const fetchAPI = async () => {
         try {
             const response = await axios.get('http://localhost:8080/api/skills');
-            setArray(response.data);
+            setArray(response.data); // response.data is already the array
             console.log(response.data);
         } catch (err) {
             console.error(err);
@@ -28,6 +28,7 @@ function Skills() {
 
     return (
         <>
+            <h1>Skills</h1>
             <section id="skills">
                 {array.map((skill) => (
                     <p key={skill.id}>{skill.name} — {skill.level}</p>
