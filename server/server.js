@@ -17,25 +17,13 @@ const loadData = () => {
 };
 
 app.get("/api/skills", (req, res) => {
-    res.join(loadData().skills);
+    res.json(loadData().skills);
 });
 
-app.get("/api/skills/:category", (req, res) => {
-    const skills = loadData().skills.filter((s) => s.category.toLowerCase() === req.params.category.toLowerCase());
-    res.json(skills);
-})
 
 app.get("/api/projects", (req, res) => {
-    res.join(loadData().skills);
+    res.json(loadData().skills);
 });
-
-app.get("/api/projects/:id", (req, res) => {
-    const project = loadData().projects.find((p) => p.id === req.params.id);
-    if (!project) return res.status(404).json({ error: "Project not found" });
-    res.json(project);
-})
-
-
 // // Import the Express module for creating the server
 // const express = require("express");
 // // Import the CORS module to handle cross-origin requests
