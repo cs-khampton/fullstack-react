@@ -58,7 +58,8 @@
         {
             "id": "4",
             "title": "MiniJava to MIPS Compiler",
-            "description": "Individually developed for CS453 to understand the inner-workings of compilers. This project consisted of four parts; lexing, parsing, semantic analysis, and code generation. When put together, these parts create a full MiniJava to MIPS compiler."
+            "description": "Individually developed for CS453 to understand the inner-workings of compilers. This project consisted of four parts; lexing, parsing, semantic analysis, and code generation. When put together, these parts create a full MiniJava to MIPS compiler.",
+            "role": "Software Engineer"
         }
     ]
 }

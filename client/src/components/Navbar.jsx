@@ -5,7 +5,8 @@ function Navbar() {
         <nav>
             <Link to={'/'} className="nav-button">Home</Link>
             <Link to={'/skills'} className="nav-button">Skills</Link>
-        </nav>
+            <Link to={'/projects'} className="nav-button">Projects</Link >
+        </nav >
     )
 }
 export default Navbar;

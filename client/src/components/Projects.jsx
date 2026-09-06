@@ -1,14 +1,14 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-function Skills() {
+function Projects() {
     const [array, setArray] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     const fetchAPI = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/skills');
+            const response = await axios.get('http://localhost:8080/api/projects');
             setArray(response.data);
             console.log(response.data);
         } catch (err) {
@@ -24,16 +24,20 @@ function Skills() {
     }, []);
 
     if (loading) return <p>Loading...</p>;
-    if (error) return <p>Failed to load skills.</p>;
+    if (error) return <p>Failed to load projects.</p>;
 
     return (
         <>
-            <section id="skills">
-                {array.map((skill) => (
-                    <p key={skill.id}>{skill.name} — {skill.level}</p>
+            <section id="projects">
+                {array.map((project) => (
+                    <div>
+                        <h3>{project.title}</h3>
+                        <p>Role: {project.role}</p>
+                        <p>{project.description}</p>
+                    </div>
                 ))}
             </section>
         </>
     )
 }
-export default Skills;
+export default Projects;

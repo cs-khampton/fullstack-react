@@ -22,7 +22,7 @@ app.get("/api/skills", (req, res) => {
 
 
 app.get("/api/projects", (req, res) => {
-    res.json(loadData().skills);
+    res.json(loadData().projects);
 });
 // // Import the Express module for creating the server
 // const express = require("express");
