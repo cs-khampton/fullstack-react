@@ -9,7 +9,7 @@ function Skills() {
     const fetchAPI = async () => {
         try {
             const response = await axios.get('http://localhost:8080/api/skills');
-            setArray(response.data); // response.data is already the array
+            setArray(response.data);
             console.log(response.data);
         } catch (err) {
             console.error(err);

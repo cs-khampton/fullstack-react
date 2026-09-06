@@ -5,6 +5,7 @@ const pageTitles = {
     '/skills': 'Skills',
     '/projects': 'Projects',
     '/about': 'About Me',
+    '/resume': "Resume"
 };
 
 function Header() {

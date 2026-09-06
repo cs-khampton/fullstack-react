@@ -30,9 +30,9 @@ function Projects() {
         <>
             <section id="projects">
                 {array.map((project) => (
-                    <div>
-                        <h3>{project.title}</h3>
-                        <p>Role: {project.role}</p>
+                    <div className="project" id={project.id}>
+                        <h2>{project.title}</h2>
+                        <h3>Role: {project.role}</h3>
                         <p>{project.description}</p>
                     </div>
                 ))}
