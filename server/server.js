@@ -11,38 +11,46 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-const loadData = () => {
-    const raw = fs.readFileSync(path.join(__dirname, "data/data.json"));
+const loadSkills = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/skills.json"));
     return JSON.parse(raw);
 };
 
 app.get("/api/skills", (req, res) => {
-    res.json(loadData().skills);
+    const { category } = req.query;
+    const skills = loadSkills().skills;
+
+    if (category) {
+        const filtered = skills.filter(
+            (s) => s.category.toLowerCase() === category.toLowerCase()
+        );
+        return res.json(filtered);
+    }
+    res.json(skills);
 });
 
+
+const loadProj = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/projects.json"));
+    return JSON.parse(raw);
+};
 
 app.get("/api/projects", (req, res) => {
-    res.json(loadData().projects);
+    res.json(loadProj().projects);
 });
-// // Import the Express module for creating the server
-// const express = require("express");
-// // Import the CORS module to handle cross-origin requests
-// const cors = require("cors");
 
-// // Create an instance of the Express application
-// const app = express();
-// // Define CORS options to allow requests from the specified origin
-// const corsOpts = {
-//     origin: "http://localhost:5173",
-// }
-// // Use the CORS middleware with the defined options
-// app.use(cors(corsOpts));
-// // Define route for the API endpoint
-// app.get("/api", (req, res) => {
-//     res.json({ fruits: ["apple", "orange", "banana"] });
-// });
 
-// // Listen for requests on port 8080
+const loadExp = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/experience.json"));
+    return JSON.parse(raw);
+};
+
+app.get("/api/experience", (req, res) => {
+    res.json(loadExp().experience);
+});
+
+
+// Listen for requests on port 8080
 app.listen(PORT, () =>
     console.log(`Server running on port ${PORT}`)
 );

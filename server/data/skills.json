@@ -1,0 +1,67 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "category": "Frontend",
+            "name": "React",
+            "level": "Intermediate",
+            "yearsOfExperience": "3"
+        },
+        {
+            "id": "2",
+            "category": "Frontend",
+            "name": "Angular",
+            "level": "Beginner",
+            "yearsOfExperience": "<1"
+        },
+        {
+            "id": "3",
+            "category": "Backend",
+            "name": "Node.js",
+            "level": "Intermediate",
+            "yearsOfExperience": "2"
+        },
+        {
+            "id": "4",
+            "category": "Database",
+            "name": "PostgresSQL",
+            "level": "Intermediate",
+            "yearsOfExperience": "<1"
+        },
+        {
+            "id": "5",
+            "category": "Backend",
+            "name": "Java",
+            "level": "Intermediate",
+            "yearsOfExperience": "6"
+        },
+        {
+            "id": "6",
+            "category": "DevOps",
+            "name": "Git/GitHub",
+            "level": "Intermediate",
+            "yearsOfExperience": "6"
+        },
+        {
+            "id": "7",
+            "category": "DevOps",
+            "name": "Bash",
+            "level": "Intermediate",
+            "yearsOfExperience": "6"
+        },
+        {
+            "id": "8",
+            "category": "DevOps",
+            "name": "Linux",
+            "level": "Intermediate",
+            "yearsOfExperience": "6"
+        },
+        {
+            "id": "9",
+            "category": "DevOps",
+            "name": "Windows",
+            "level": "Advanced",
+            "yearsOfExperience": "10+"
+        }
+    ]
+}
