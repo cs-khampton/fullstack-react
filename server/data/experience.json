@@ -8,8 +8,9 @@
             "endDate": "May 2026",
             "description": "",
             "tasks": [
-                "Course Content Creation & Presentation}{Collaborated in teams of 3-26 to develop and present  instructional materials on core programming concepts in Python and Java in CS150B, CS164, and CS312, supporting lecture delivery across multiple courses ranging from 50-250 students.",
-                "Held 3-6 office hours weekly over three semesters to provide 50+ students with one-on-one academic support. Attended course lectures twice weekly to support students and the instructional team."
+                "Collaborating weekly in teams of 3-26 to assist in development of instructional material over core programming concepts in Python, Java, and web development languages. Assisting in delivery of lecture and lab material across multiple sections ranging from 50-250 students.",
+                "Attending weekly course lectures to support in-person students, remote students, and the instructional team during presentation delivery.",
+                "Holding 3-6 office hours weekly over three semesters to provide 50+ students with one-on-one academic support daily."
             ]
         },
         {
@@ -20,8 +21,8 @@
             "endDate": "November 2023",
             "description": "",
             "tasks": [
-                "Built SQL queries to inspect incoming data for anomalies such as hardware failure, server downtime, and external weather factors that may affect sensor devices.",
-                "Created visualizations of over 8000 data entries each month using Excel and Python libraries (numpy, SciPy, pandas, etc.). Visualizations were then reviewed and presented to stakeholders during weekly meetings to assess and report estimated total solar generation within the region each month."
+                "Building SQL queries to inspect incoming data for anomalies such as hardware failure, server downtime, and external weather factors that may affect sensor devices and the transmitted data.",
+                "Creating monthly data visualizations for 8,000+ data entries each month using Excel and Python libraries (numpy, SciPy, pandas, matplotlib, etc.). Graphs and other visual depictions were reviewed by supervisors and presented to stakeholders during weekly meetings. These visualizations were used to assess and report the estimated total solar generation within the region each month."
             ]
         },
         {

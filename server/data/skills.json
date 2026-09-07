@@ -48,6 +48,20 @@
             "name": "Bash",
             "level": "Intermediate",
             "yearsOfExperience": "6"
+        },
+        {
+            "id": "8",
+            "category": "DevOps",
+            "name": "Linux",
+            "level": "Intermediate",
+            "yearsOfExperience": "6"
+        },
+        {
+            "id": "9",
+            "category": "DevOps",
+            "name": "Windows",
+            "level": "Advanced",
+            "yearsOfExperience": "10+"
         }
     ]
 }

@@ -31,13 +31,11 @@ function Skills() {
             : allSkills.filter((s) => s.category === category);
 
     if (error) return <p>Failed to load skills.</p>;
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading skills...</p>;
 
     return (
         <section>
-            <h2>Skills</h2>
-
-            <select value={category} onChange={(e) => setCategory(e.target.value)}>
+            <select value={category} onChange={(event) => setCategory(event.target.value)}>
                 {categories.map((cat) => (
                     <option key={cat} value={cat}>
                         {cat}
@@ -47,9 +45,7 @@ function Skills() {
 
             <div className="skills-list">
                 {filteredSkills.map((skill) => (
-                    <p key={skill.id}>
-                        {skill.name} — {skill.level}
-                    </p>
+                    <p>{skill.name} — ({skill.yearsOfExperience} years)  {skill.level}</p>
                 ))}
             </div>
         </section>

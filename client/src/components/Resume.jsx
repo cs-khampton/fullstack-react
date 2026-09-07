@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import resume from '../assets/KH_Resume_8-26.pdf';
 
 function Resume() {
 
@@ -33,7 +34,8 @@ function Resume() {
                 {array.map((exp) => (
                     <div className="experience" key={exp.id}>
                         <h2>{exp.company}</h2>
-                        <p>{exp.jobTitle}</p>
+                        <p id='job-title'>{exp.jobTitle}</p>
+                        <p id='employment-date'>{exp.startDate} - {exp.endDate}</p>
                         <ul>
                             {exp.tasks.map((task, index) => (
                                 <li key={index}>{task}</li>
@@ -42,6 +44,9 @@ function Resume() {
                     </div>
                 ))}
             </section>
+            <div id="resume-PDF-download">
+                <a href={resume} download="KaiHampton_Resume.pdf">Download PDF Version</a>
+            </div>
         </>
     )
 }
