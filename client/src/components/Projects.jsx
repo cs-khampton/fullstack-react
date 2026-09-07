@@ -23,7 +23,7 @@ function Projects() {
         fetchAPI();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading projects...</p>;
     if (error) return <p>Failed to load projects.</p>;
 
     return (

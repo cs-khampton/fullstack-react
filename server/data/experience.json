@@ -1,0 +1,40 @@
+{
+    "experience": [
+        {
+            "id": "1",
+            "company": "Colorado State University",
+            "jobTitle": "Lead UTA/UTA",
+            "startDate": "August 2024",
+            "endDate": "May 2026",
+            "description": "",
+            "tasks": [
+                "Course Content Creation & Presentation}{Collaborated in teams of 3-26 to develop and present  instructional materials on core programming concepts in Python and Java in CS150B, CS164, and CS312, supporting lecture delivery across multiple courses ranging from 50-250 students.",
+                "Held 3-6 office hours weekly over three semesters to provide 50+ students with one-on-one academic support. Attended course lectures twice weekly to support students and the instructional team."
+            ]
+        },
+        {
+            "id": "2",
+            "company": "STEMblazers (formerly She's in Power)",
+            "jobTitle": "Spark (Intern)",
+            "startDate": "June 2023",
+            "endDate": "November 2023",
+            "description": "",
+            "tasks": [
+                "Built SQL queries to inspect incoming data for anomalies such as hardware failure, server downtime, and external weather factors that may affect sensor devices.",
+                "Created visualizations of over 8000 data entries each month using Excel and Python libraries (numpy, SciPy, pandas, etc.). Visualizations were then reviewed and presented to stakeholders during weekly meetings to assess and report estimated total solar generation within the region each month."
+            ]
+        },
+        {
+            "id": "3",
+            "company": "Front Range Community College",
+            "jobTitle": "Help Desk Specialist",
+            "startDate": "August 2022",
+            "endDate": "June 2023",
+            "description": "",
+            "tasks": [
+                "Reviewed, evaluated and assigned 50+ tickets weekly by priority, resolving urgent issues within an hour and lower-priority requests within 12 hours.",
+                "Greeted and assisted in-person students, staff and faculty with IT-related issues. Fielded phone calls for incoming ticket requests and assistance from three locations and offered support for software, hardware, and related configuration in-person, remotely, or via email."
+            ]
+        }
+    ]
+}

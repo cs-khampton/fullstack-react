@@ -11,14 +11,14 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-const loadData = () => {
-    const raw = fs.readFileSync(path.join(__dirname, "data/data.json"));
+const loadSkills = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/skills.json"));
     return JSON.parse(raw);
 };
 
 app.get("/api/skills", (req, res) => {
     const { category } = req.query;
-    const skills = loadData().skills;
+    const skills = loadSkills().skills;
 
     if (category) {
         const filtered = skills.filter(
@@ -26,13 +26,29 @@ app.get("/api/skills", (req, res) => {
         );
         return res.json(filtered);
     }
-
     res.json(skills);
 });
 
+
+const loadProj = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/projects.json"));
+    return JSON.parse(raw);
+};
+
 app.get("/api/projects", (req, res) => {
-    res.json(loadData().projects);
+    res.json(loadProj().projects);
 });
+
+
+const loadExp = () => {
+    const raw = fs.readFileSync(path.join(__dirname, "data/experience.json"));
+    return JSON.parse(raw);
+};
+
+app.get("/api/experience", (req, res) => {
+    res.json(loadExp().experience);
+});
+
 
 // Listen for requests on port 8080
 app.listen(PORT, () =>

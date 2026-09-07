@@ -1,0 +1,14 @@
+{
+    "education": [
+        {
+            "id": "1",
+            "school": "Colorado State University",
+            "level": "Bachelor's"
+        },
+        {
+            "id": "2",
+            "school": "Front Range Community College",
+            "level": "Associate's"
+        }
+    ]
+}

@@ -3,9 +3,6 @@ function App() {
 
   return (
     <>
-      <section id="center">
-        <p>Hello!</p>
-      </section>
     </>
   );
 }
